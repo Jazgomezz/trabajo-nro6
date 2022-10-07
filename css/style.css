@@ -1,8 +1,15 @@
 .grid {
     display: grid;
 }
+
 .grid div{
-    
+    background: rgb(218, 168, 168); 
+    padding: 1em;
+}
+
+
+.grid div:hover{
+    border: 1px solid rosybrown;
 }
 
  
