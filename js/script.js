@@ -1,3 +1,4 @@
+//#region 
 function muestraOpcion()  {
     var opciones = document.getElementsByName("eleccion");
 
@@ -11,4 +12,14 @@ function muestraOpcion()  {
 
 
 }
+//#endregion
+//#region 
+let a=5;
+let b=6;
+
+console.log ('suma', a+b);
+console.log ('resta', a-b);
+console.log ('multiplicación', a*b);
+console.log ('división', a/b);
+//#endregion
 
