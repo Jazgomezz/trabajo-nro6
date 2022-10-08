@@ -96,15 +96,30 @@
 
     <label for="numero1">Numero 1</label>
     <input type="text" id="numero1" onchange="sumar();"><br>
-    
     <label for="numero2">Numero 2</label>
     <input type="text" id="numero2" onchange="sumar();"><br>
-    
-    
-    <input type="submit" value="resultado"/>
+    <input type="submit" value="resultado"/><br>
     
     
 
-
+    <input id="num1"><br>  
+    <input id="num2">  
+    <button type="button" onclick="sumando()">Sumar</button>  
+    <p id="sumando"></p>  
+    <script>
+        function sumando() {
+            var x,y,suma,text;
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            if (isNaN(x) || isNaN(y)) {
+                text = "Es necesarios introducir dos números válidos";
+            } else {
+                //si no ponemos parseFloat concatenaría x con y
+                suma=parseFloat(x)+parseFloat(y);
+                text= suma;
+            }
+            document.getElementById("sumando").innerHTML = text;
+        }
+        </script>
 </body>
 </html>
