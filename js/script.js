@@ -1,25 +1,11 @@
 //#region 
-function muestraOpcion()  {
-    var opciones = document.getElementsByName("eleccion");
+function sumar(){
+    var numero1 = document.getElementById('numero1').value;
+    var numero2 = document.getElementById('numero2').value;
 
-    for(let i=0;i<opciones.length;i++); {
-        console.log(opciones[i]);
-        if(opciones[i].checked); {
-            alert(opciones[i].value);
-
-        }
+    if(numero1!=='' && numero2!==''){
+        var suma = parseInt(numero1)+parseInt(numero2);
+        document.getElementById('resultado').value = suma;
     }
-
-
 }
 //#endregion
-//#region 
-let a=5;
-let b=6;
-
-console.log ('suma', a+b);
-console.log ('resta', a-b);
-console.log ('multiplicación', a*b);
-console.log ('división', a/b);
-//#endregion
-
